@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Reservations";
+}
+<h1>@ViewData["Reservations"]</h1>
+
+<div class="text-center">
+    <h1 class="display-2">Thank you for Reserving with Sympo!</h1>
+    <h3 class="display-4">You are just seconds away from reserving your next gathering and moving on with your life!!  We know you are busy and we are here to make things
+        just a little easier! Granted, we are not doing your laundry, but we can help get that meeting out of the way!  Just click on the buttons below and they will guide you
+        through the rest of the reservation process!!
+    </h3>
+    <p> 
+
+        <p>Please choose a reservation date: <input type="text" id="date" data-format="DD-MM-YYYY" data-template="D MMM YYYY" name="date" value="09-01-2013">
+        <p>Please choose the room you would like to reserve on that date:</p>
+        <div class = "dropdown">
+            <button onclick = "myFunction()" class = "dropbtn">Please select:</button>
+            <div id="myDropdown" class = "dropdown-content">
+               <p>The Lake View Room</p>
+               <p>The Zen Gardens</p>
+               <p>Bellatory Room</p>
+               <p>The Rose Room</p>
+               <p>Ten Thousand Waves Room</p>
+               <p>The Marvel Universe Room</p>
+               <p>The Mickey Mouse Clubhouse Room</p>
+               <p></p> 
+            </div>
+        </div>
+<script>
+$(function(){
+    $('#date').combodate();    
+});
+</script></p>        
+        
